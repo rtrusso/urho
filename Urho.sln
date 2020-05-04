@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2036
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Native", "Native", "{02DFD71E-AC0B-4D8A-9038-CD4EE9ED7209}"
 EndProject
@@ -78,8 +78,8 @@ Global
 		Bindings\Urho.Shared.projitems*{05693742-16e4-45ad-b7dd-b5f3de51bc11}*SharedItemsImports = 13
 		Tests\Playgrounds\Forms\Playgrounds.Forms\Playgrounds.Forms\Playgrounds.Forms.Shared.projitems*{258f64d6-bdfb-48e7-93cc-b96c57fec2fe}*SharedItemsImports = 4
 		Tests\Playgrounds\Forms\Playgrounds.Forms\Playgrounds.Forms\Playgrounds.Forms.Shared.projitems*{507feed7-f317-4de5-bf4a-147fa35123ee}*SharedItemsImports = 13
-		Bindings\Urho.Shared.projitems*{9c3a02c0-6776-438a-aaf7-9f95af55e243}*SharedItemsImports = 4
-		Tests\Playgrounds\Forms\Playgrounds.Forms\Playgrounds.Forms\Playgrounds.Forms.Shared.projitems*{d9b42fa2-9b80-4be4-9bee-45c53fd43ffc}*SharedItemsImports = 4
+		Bindings\Urho.Shared.projitems*{81abcf29-29af-4c8d-bdc0-7e7214618104}*SharedItemsImports = 5
+		Bindings\Urho.Shared.projitems*{c25a3fe0-5781-4546-bdb2-bb65ed73b165}*SharedItemsImports = 5
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU

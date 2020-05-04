@@ -17,7 +17,9 @@ if "%VSVER%" == "" echo ERROR: VS_VER is not set, example of usage: "MakeWindows
 
 if "%VSVER%" == "2015" set "VS_VER=14"
 if "%VSVER%" == "2017" set "VS_VER=15"
+if "%VSVER%" == "2019" set "VS_VER=16"
 if "%PLATFORM%" == "x64" (set "TARGET=Visual Studio %VS_VER% Win64") else (set "TARGET=Visual Studio %VS_VER%")
+if "%VSVER%%PLATFORM%" == "2019x64" (set "TARGET=Visual Studio %VS_VER% %VSVER%")
 if "%PLATFORM%" == "x64" (set "PLATFORM_SUFFIX=Win64") else (set "PLATFORM_SUFFIX=Win32")
 if "%PLATFORM%" == "x64" (set "MONOURHO_PLATFORM=x64") else (set "MONOURHO_PLATFORM=Win32")
 if "%CONFIG%" == "Release" (set "CONFIG_SUFFIX=") else (set "CONFIG_SUFFIX=_d")
