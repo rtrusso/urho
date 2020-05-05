@@ -83,6 +83,11 @@
     <Compile Include="..\NetCore\NetCoreUrhoInitializer.cs" />
   </ItemGroup>
 
+  <!-- .NET Standard 2.0 -->
+  <ItemGroup Condition="$(TargetFramework) == 'netstandard2.0'">
+    <Compile Include="..\NetCore\NetCoreUrhoInitializer.cs" />
+  </ItemGroup>
+
   <Import Project="..\Urho.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildSDKExtrasTargets)" Condition="Exists('$(MSBuildSDKExtrasTargets)')" />
   <Import Condition="$(TargetFramework) == 'xamarin.ios10' AND '$(OS)' != 'Windows_NT'" Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />

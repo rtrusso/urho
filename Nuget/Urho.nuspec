@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="3.0">
        <id>UrhoSharp</id>
-       <version>1.9.1-test</version>
+       <version>1.9.4-test</version>
        <title>UrhoSharp</title>
        <authors>Xamarin,Microsoft</authors>
        <owners>Xamarin,Microsoft</owners>
