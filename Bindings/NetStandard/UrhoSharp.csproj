@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
 
   <PropertyGroup>
-    <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">netstandard2.0;uap10.0.16299;net45;netcoreapp2.1;portable-net45+win8+wpa81</TargetFrameworks>
-    <TargetFrameworks Condition=" '$(OS)' != 'Windows_NT' ">netstandard2.0;monoandroid81;xamarin.ios10;net45;netcoreapp2.1;portable-net45+win8+wpa81</TargetFrameworks>
+    <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">netstandard2.0;net472;netcoreapp3.0</TargetFrameworks>
+    <TargetFrameworks Condition=" '$(OS)' != 'Windows_NT' ">netstandard2.0;monoandroid81;xamarin.ios10;net472;netcoreapp3.0</TargetFrameworks>
     <Product>$(AssemblyName) ($(TargetFramework))</Product>
     <DefineConstants>$(DefineConstants);</DefineConstants>
     <RootNamespace>Urho</RootNamespace>
@@ -13,7 +13,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MSBuild.Sdk.Extras" Version="1.6.55" PrivateAssets="All" />
+    <PackageReference Include="MSBuild.Sdk.Extras" Version="2.0.54" PrivateAssets="All" />
   </ItemGroup>
 
   <!-- Android -->
@@ -60,7 +60,7 @@
   </ItemGroup>
 
   <!-- UWP -->
-  <ItemGroup Condition="$(TargetFramework) == 'uap10.0.16299'">
+  <ItemGroup Condition="$(TargetFramework) == 'uap10.0'">
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.5" />
     <SDKReference Include="WindowsMobile, Version=10.0.16299.0">
       <Name>Windows Mobile Extensions for the UWP</Name>
@@ -74,12 +74,12 @@
   </ItemGroup>
 
   <!-- .NET 4.x -->
-  <ItemGroup Condition="$(TargetFramework) == 'net45'">
+  <ItemGroup Condition="$(TargetFramework) == 'net472'">
     <Compile Include="..\Desktop\DesktopUrhoInitializer.cs" />
   </ItemGroup>
 
   <!-- .NET Core -->
-  <ItemGroup Condition="$(TargetFramework) == 'netcoreapp2.1'">
+  <ItemGroup Condition="$(TargetFramework) == 'netcoreapp3.0'">
     <Compile Include="..\NetCore\NetCoreUrhoInitializer.cs" />
   </ItemGroup>
 
